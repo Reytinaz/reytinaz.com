@@ -6,36 +6,27 @@ body {
     line-height: 1.4;
     overflow-x: hidden;
     height: 100%;
-    background: rgb(186,185,223);
-    background: linear-gradient(30deg, rgba(186,185,223,1) 0%, rgba(227,244,247,1) 100%);
+    /*background: rgb(186,185,223);
+    background: linear-gradient(0deg, rgb(96, 95, 126) 0%, rgb(180, 180, 180) 100%);*/
+    background: url("assets/RobloxScreenShot20220712_164607784.png");
+    background-size: 1300px;
 }
-a {
-   color:#1a1a1a;
-   text-decoration: none;
-} 
+
+/* Creations */
+
+/* NAVIGATION BAR */
 .navbar {
     background: rgb(126,133,136);
     background: linear-gradient(0deg, rgba(126,133,136,1) 0%, rgb(153, 153, 153) 100%);
     width: 100%;
-    height: 85px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
-}
-.navbarFooter {
-    background: rgb(116,116,116);
-    background: linear-gradient(0deg, rgba(116,116,116,1) 0%, rgba(183,202,209,1) 100%);
-    width: 100%;
-    height: 130px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
-}
-.navbar .container {
-    height: inherit;
+    height: 62px;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .navbar-menu {
     list-style-type: none;
-    padding-left: 0;
     margin-bottom: 0;
 }
 .navbar-menu li {
@@ -54,103 +45,116 @@ a {
     opacity: 1;
     font-size: 20px;
 }
-.navbar-wrap {
-    display: flex;
-    flex-flow: none nowrap;
-}
-.navbar-logo {
+.navbar-logo h1{
     font-weight: 900;
-    font-size: 30px;
+    font-size: 35px;
     text-decoration: none;
-    color: #3a3a3a;
-    transition: all .08s ease-in-out;
-}
-.navbar-logo:hover {
-    color: #141414;
-}
-.wrapper2 {
-    /*min-height: 100%;*/
-    display: flex;
-    flex-direction: column;
-}
-.big-text {
-    opacity: 1;
-    font-size: 30px;
-    text-decoration: none;
-}
-.link-text a:hover() {
-    opacity: 1;
-    font-size: 30px;
-    color: #141414;
-}
-.big-text2 {
-    opacity: 1;
-    font-size: 30px;
-    text-decoration: none;
-    color: #141414;
+    color: #2e2e2e;
+    margin-left: 25px;
 }
 
-.big-div {
-    opacity: 1.2;
-    border-radius: 80px;
+/*SIDE BAR*/
+.sidebar {
+    display: block;
+    background: rgb(139, 139, 139);
+    height: 100%;
+    width: 160px;
+    z-index: 1;
+    position: absolute;
 }
-
-.title1 {
-    opacity: 1;
-    background-color: rgb(196, 196, 196);
+.sidebar li {
     text-decoration: none;
-    color: #5e5e5e;
-    text-align: center;
+    opacity: 1;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(37, 37, 37);
 }
-.title2 {
-    opacity: 0.8;
+.sidebar header {
+    font-size: 25px;
+    font-weight: 900;
+    color: #222222;
+}
+.sidebar button {
     background: none;
-    color: #2b2b2b;
-    text-align: center;
-}
-.image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    width: 70%
-}
-.image2 {
-    border-radius: 5px;
-    width: 75%;
-}
-.middle-text {
-    text-align: center;
-}
-.div-panel {
-    display: block;
-    position: relative;
-    background: rgb(150,171,174);
-    background: linear-gradient(0deg, rgba(150,171,174,1) 0%, rgba(183,202,209,1) 100%);
     opacity: 1;
-    margin-top: 2%;
-    left: 5%;
-    border-radius: 20px;
-    width: 91%;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(37, 37, 37);
+    border: none;
 }
-.game-panel a {
+.sidebar button:hover {
+    font-weight: 900;
+    transition: all .1s ease-in-out;
+    color: rgb(45,45,45);
+}
+
+
+/*SIDE BAR - Roblox Games*/
+.robloxgames {
+    margin-left: 130px;
+    z-index: 0;
+}
+.robloxgame-panel a {
     text-decoration: none;
-    color: #141414;
+    color: #3b3b3b;
     font-size: 25px;
 }
-.game-panel img {
+.robloxgame-panel img {
     position:  relative;
     left: 1%;
     margin-bottom: 1%;
 }
-.game-panel {
+.robloxgame-panel {
     display: block;
     position: relative;
-    background: rgb(150,171,174);
-    background: linear-gradient(0deg, rgba(150,171,174,1) 0%, rgba(183,202,209,1) 100%);
+    background: rgb(189, 189, 189);
     opacity: 1;
-    margin-top: 2%;
-    left: 2%;
+    left: 50px;
     border-radius: 20px;
     width: 90%;
+}
+.robloxgame-text {
+    color: aliceblue;
+    margin-left: 250px;
+}
+
+/*SIDE BAR - Assets*/
+.robloxassets {
+    margin-left: 130px;
+    z-index: 0;
+    display: none;
+}
+.robloxassets-panel {
+    display: block;
+    position: relative;
+    background: rgb(189, 189, 189);
+    opacity: 1;
+    left: 50px;
+    border-radius: 20px;
+    width: 90%;
+}
+.robloxassets-panel a {
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 25px;
+}
+.robloxassets-panel h1 {
+    text-decoration: none;
+    color: #252525;
+    font-size: 30px;
+}
+
+
+/* CONTACTS */
+
+.contact a {
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: azure;
+}
+.contact a:hover {
+    color: #3b3b3b;
+    font-weight: 900;
+    transition: all 0.1s ease-in-out;
 }
