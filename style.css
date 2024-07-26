@@ -103,6 +103,7 @@ body {
     position:  relative;
     left: 1%;
     margin-bottom: 1%;
+    width: 98%;
 }
 .robloxgame-panel {
     display: block;
@@ -118,9 +119,6 @@ body {
     color: aliceblue;
     margin-left: 150px;
     height: 140px; 
-}
-.robloxgame-panel img {
-    width: 97%;
 }
 
 /*SIDE BAR - Assets*/
