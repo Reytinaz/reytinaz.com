@@ -1,9 +1,9 @@
 
 body {
-    position: relative;
+    position: fixed;
     font-family: "Note Sans" sans-serif;
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.5;
     overflow-x: hidden;
     height: 100%;
     /*background: rgb(186,185,223);
@@ -110,12 +110,17 @@ body {
     background: rgb(189, 189, 189);
     opacity: 1;
     left: 50px;
-    border-radius: 20px;
-    width: 90%;
+    border-radius: 10px;
+    width: 92%;
 }
 .robloxgame-text {
+    display: block;
     color: aliceblue;
-    margin-left: 250px;
+    margin-left: 150px;
+    height: 140px; 
+}
+.robloxgame-panel img {
+    width: 97%;
 }
 
 /*SIDE BAR - Assets*/
@@ -130,8 +135,8 @@ body {
     background: rgb(189, 189, 189);
     opacity: 1;
     left: 50px;
-    border-radius: 20px;
-    width: 90%;
+    border-radius: 10px;
+    width: 92%;
 }
 .robloxassets-panel a {
     text-decoration: none;
@@ -143,18 +148,9 @@ body {
     color: #252525;
     font-size: 30px;
 }
-
-
-/* CONTACTS */
-
-.contact a {
-    font-size: 30px;
-    font-weight: 500;
-    text-decoration: none;
-    color: azure;
-}
-.contact a:hover {
-    color: #3b3b3b;
-    font-weight: 900;
-    transition: all 0.1s ease-in-out;
+.robloxassets-text {
+    display: block;
+    color: aliceblue;
+    margin-left: 150px;
+    height: 140px; 
 }

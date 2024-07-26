@@ -1,0 +1,66 @@
+
+body {
+    position: relative;
+    font-family: "Note Sans" sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow-x: hidden;
+    height: 100%;
+    /*background: rgb(186,185,223);
+    background: linear-gradient(0deg, rgb(96, 95, 126) 0%, rgb(180, 180, 180) 100%);*/
+    background: url("assets/RobloxScreenShot20220712_164607784.png");
+    background-size: 100% 600px;
+}
+
+/* CONTACTS */
+
+/* NAVIGATION BAR */
+.navbar {
+    background: rgb(126,133,136);
+    background: linear-gradient(0deg, rgba(126,133,136,1) 0%, rgb(153, 153, 153) 100%);
+    width: 100%;
+    height: 62px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+.navbar-menu li {
+    display: inline-block;
+}
+.navbar-menu li a{
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .08s ease-in-out;
+}
+.navbar-menu li a:hover {
+    opacity: 1;
+    font-size: 20px;
+}
+.navbar-logo h1{
+    font-weight: 900;
+    font-size: 35px;
+    text-decoration: none;
+    color: #2e2e2e;
+    margin-left: 25px;
+}
+
+.contact a {
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: azure;
+}
+.contact a:hover {
+    color: #3b3b3b;
+    font-weight: 900;
+    transition: all 0.1s ease-in-out;
+}
