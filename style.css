@@ -1,10 +1,11 @@
 
 body {
-    position: fixed;
+    position: absolute;
     font-family: "Note Sans" sans-serif;
     font-size: 16px;
     line-height: 1.4;
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: hidden;
     height: 100%;
     width: 100%;
     /*background: rgb(186,185,223);

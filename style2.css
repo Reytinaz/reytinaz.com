@@ -4,13 +4,8 @@ body {
     font-family: "Note Sans" sans-serif;
     font-size: 16px;
     line-height: 1.4;
-    overflow-x: hidden;
-    height: 100%;
-    /*background: rgb(186,185,223);
-    background: linear-gradient(0deg, rgb(96, 95, 126) 0%, rgb(180, 180, 180) 100%);*/
     background: url("assets/RobloxScreenShot20220712_164607784.png");
-    background-size: 100% 700px; 
-
+    background-size: 100% 750px; 
 }
 
 /* CONTACTS */
