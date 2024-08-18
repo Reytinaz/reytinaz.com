@@ -4,19 +4,13 @@
       <meta charset="UTF-8">
       <title>Debug</title>
       <script>
+        function printData(data) {
+          for await (const debug of data) {
+              console.log(debug)
+          }
+        }
         function fetchJSONData() {
-            fetch("./debug.json")
-            .then((res) => {
-              if (!res.ok) {
-                throw new Error
-                  (`HTTP error! Status: ${res.status}`);
-              }
-              return res.json();
-             })
-            .then((data) => 
-              console.log(data))
-            .catch((error) => 
-              console.error("Unable to fetch data:", error));
+            fetch("./debug.json").then((data) => printData(data))
         }
         fetchJSONData();
       </script>
