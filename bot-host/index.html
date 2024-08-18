@@ -5,7 +5,7 @@
       <title>Debug</title>
       <script>
         function printData(data) {
-          for await (const debug of data) {
+          for (const debug of data) {
               console.log(debug)
           }
         }
