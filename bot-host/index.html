@@ -5,12 +5,24 @@
       <title>Debug</title>
       <script>
         function printData(data) {
-          for (const debug of data) {
+          for (const debug of data.debugs) {
               console.log(debug)
           }
         }
+        function fetchJSONData() {
+            fetch("./debug.json")
+                .then((res) => {
+                    if (!res.ok) {
+                        throw new Error
+                            (`HTTP error! Status: ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then((data) => 
+                      printData(data))
+        }
+        fetchJSONData();
       </script>
-      <script type="module" src="./readDebug.js"></script>
     </head>
     <body> 
       <h1>hello world</h1>
