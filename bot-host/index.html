@@ -6,7 +6,9 @@
       <script>
         function printData(data) {
           for (const debug of data.debugs) {
-              console.log(debug)
+              var newText = document.createElement("h1")
+              newText.appendChild(document.createTextNode(debug))
+              document.body.appendChild(newText)
           }
         }
         function fetchJSONData() {
