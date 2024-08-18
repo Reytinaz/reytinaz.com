@@ -1,3 +1,3 @@
 # reytinaz
-hi
-hi
+just a web-site
+and bot-host
