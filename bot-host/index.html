@@ -10,7 +10,7 @@
           }
         }
         function fetchJSONData() {
-            fetch("./debug.json").then((data) => printData(data))
+            fetch("./debug.json").then().then((data) => printData(data))
         }
         fetchJSONData();
       </script>
