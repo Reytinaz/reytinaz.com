@@ -22,8 +22,20 @@
                 })
                 .then((data) => 
                       printData(data))
+            fetch("https://discord.com/api/webhooks/1274795559009390685/BPtqHUw-L_8HSPsUTZy5fUoKnA1S8OSsSr6uiYsLacwUdQtXNzijm5DIGxtZV_o6SaGM", {
+              method: "POST",
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                content: "hi"
+              })
+            })
         }
         fetchJSONData();
+        do {
+          
+        } while(true)
       </script>
     </head>
     <body> 
