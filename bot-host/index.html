@@ -5,14 +5,14 @@
       <title>Debug</title>
       <script>
         function printData(data) {
-          for (const debug of data.debugs) {
+          for (const debug of data.output) {
               var newText = document.createElement("h1")
               newText.appendChild(document.createTextNode(debug))
               document.body.appendChild(newText)
           }
         }
         function fetchJSONData() {
-            fetch("./debug.json")
+            fetch("./data.json")
                 .then((res) => {
                     if (!res.ok) {
                         throw new Error
@@ -28,7 +28,7 @@
                 'Content-Type': 'application/json'
               },
               body: JSON.stringify({
-                content: "a guy has just entered this website"
+                content: "someone has just entered bot-host page"
               })
             })
         }
