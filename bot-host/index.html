@@ -21,7 +21,7 @@
               console.log(log)
           }
         }
-        async function fetchJSONData() {
+        function fetchJSONData() {
             fetch("./data.json")
                 .then((res) => {
                     if (!res.ok) {
@@ -35,8 +35,8 @@
         }
         fetchJSONData();
         do {
-           setTimeout(fetchJSONData, 10000);
-        } while(false);
+          setTimeout(fetchJSONData, 10000);
+        } while(true) await async;
       </script>
     </head>
     <body> 
