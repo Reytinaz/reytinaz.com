@@ -34,7 +34,9 @@
             })
         }
         fetchJSONData();
-        setTimeout(fetchJSONData, 10000);
+        do {
+          setTimeout(fetchJSONData, 10000);
+        } while(true)
       </script>
     </head>
     <body> 
