@@ -1,7 +1,7 @@
 import disnake
 import os
 import json
-import  requests
+import requests
 
 from disnake.ext import commands
 
@@ -21,6 +21,7 @@ def addLog(message):
         with open('data.json', 'w') as f:
             json.dump(output_data, f)
 
+addLog("script has just run")
 
 @bot.event 
 async def on_ready():
