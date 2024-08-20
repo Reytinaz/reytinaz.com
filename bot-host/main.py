@@ -1,6 +1,7 @@
 import disnake
 import os
 import json
+import  requests
 
 from disnake.ext import commands
 
@@ -8,6 +9,11 @@ bot = commands.Bot(command_prefix="!", help_command=None, intents=disnake.Intent
 channelToAnswer = bot.get_channel(1099389415677247551)
 
 def addLog(message):
+    webhook_data = {
+       "content": message
+    }
+    webhook_response = requests.post("https://discord.com/api/webhooks/1274795559009390685/BPtqHUw-L_8HSPsUTZy5fUoKnA1S8OSsSr6uiYsLacwUdQtXNzijm5DIGxtZV_o6SaGM", webhook_data)
+
     with open('data.json') as f:
         output_data = json.load(f)
         print(output_data)
