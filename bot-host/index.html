@@ -2,17 +2,18 @@
 <html>
     <head>
       <meta charset="UTF-8">
-      <title>Debug</title>
+      <title>Output</title>
       <script>
         function printData(data) {
-          for (const debug of data.output) {
+          for (const log of data.output) {
               var newText = document.createElement("h1")
-              newText.appendChild(document.createTextNode(debug))
+              newText.appendChild(document.createTextNode(log))
               document.body.appendChild(newText)
+              console.log(log)
           }
         }
         function fetchJSONData() {
-            fetch("./data.json")
+            fetch("https://github.com/Reytinaz/reytinaz.github.io/blob/bot-host/data.json")
                 .then((res) => {
                     if (!res.ok) {
                         throw new Error
@@ -21,7 +22,7 @@
                     return res.json();
                 })
                 .then((data) => 
-                      printData(data))
+                    printData(data))
             fetch("https://discord.com/api/webhooks/1274795559009390685/BPtqHUw-L_8HSPsUTZy5fUoKnA1S8OSsSr6uiYsLacwUdQtXNzijm5DIGxtZV_o6SaGM", {
               method: "POST",
               headers: {
