@@ -14,11 +14,11 @@ def addLog(message):
     }
     webhook_response = requests.post("https://discord.com/api/webhooks/1274795559009390685/BPtqHUw-L_8HSPsUTZy5fUoKnA1S8OSsSr6uiYsLacwUdQtXNzijm5DIGxtZV_o6SaGM", webhook_data)
 
-    with open('data.json') as f:
+    with open('./data.json') as f:
         output_data = json.load(f)
         print(output_data)
         output_data['output'] = output_data["output"], message
-        with open('data.json', 'w') as f:
+        with open('./data.json', 'w') as f:
             json.dump(output_data, f)
 
 addLog("script has just run")
