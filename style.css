@@ -102,24 +102,26 @@ body {
     font-size: 25px;
 }
 .robloxgame-panel img {
-    position:  relative;
-    left: 1%;
+    position: relative;
+    left: 7%;
     margin-bottom: 1%;
-    width: 98%;
+    width: 85%;
+    height: 75%;
 }
 .robloxgame-panel {
     display: block;
     position: relative;
     background: rgb(189, 189, 189);
     opacity: 1;
-    left: 50px;
+    left: 20%;
     border-radius: 10px;
-    width: 92%;
+    width: 60%;
+    height: 50%;
 }
 .robloxgame-text {
     display: block;
     color: aliceblue;
-    margin-left: 17%;
+    margin-left: 20%;
     height: 140px; 
 }
 
